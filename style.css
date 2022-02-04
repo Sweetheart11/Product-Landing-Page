@@ -1,0 +1,145 @@
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+}
+main {
+  z-index: 1;
+}
+nav > ul {
+  width: 35vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 50px;
+}
+hero input[type="email"] {
+  width: 200%;
+  max-width: 250px;
+  padding: 5px;
+  border-radius: 1px;
+}
+hero input[type="submit"] {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 150px;
+  height: 30px;
+  margin-top: 20px;
+}
+#header {
+  position: fixed;
+  top: 0;
+  min-height: 70px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  background-color: #eee;
+}
+#logo {
+  width: 60vw;
+}
+#header-img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+#flex-product {
+  margin-top: 30px;
+}
+#grid {
+  display: flex;
+}
+
+#icon-product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  width: 20vw;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 130px;
+  padding: 5px;
+}
+.desc > h2 {
+  margin-bottom: -12px;
+}
+#video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+#video {
+  width: 100%;
+  max-width: 500px;
+}
+#block-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+#block-item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+#block-item > button {
+  height: 30px;
+  margin: 15px 0;
+  background-color: rgb(205, 255, 0);
+  border: 1px solid black;
+  border-radius: 4px;
+}
+#level {
+  background-color: #f0f;
+  padding: 20px 0;
+  margin-top: 0px;
+}
+
+@media (max-width: 650px) {
+  #header {
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    padding-top: 15px;
+    width: 100%;
+  }
+  #nav-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+  #nav-bar ul {
+    flex-direction: column;
+  }
+  #nav-bar li {
+    padding-bottom: 5px;
+  }
+  hero {
+    margin-top: 130px;
+  }
+}
